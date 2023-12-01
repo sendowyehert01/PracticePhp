@@ -1,12 +1,13 @@
 <?php
 include "db.php";
+include "functions.php";
   
-  $query = "SELECT * FROM information";
-  $result = mysqli_query($connection, $query);
-  
-  if (!$result) {
-    die('Query Failed!' . mysqli_error());
-  }
+$query = "SELECT * FROM information";
+$result = mysqli_query($connection, $query);
+
+if (!$result) {
+  die('Query Failed!' . mysqli_error($connection));
+}
 
 ?>
 

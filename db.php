@@ -1,5 +1,5 @@
 <?php 
-  $connection = mysqli_connect('127.0.0.1', 'sendow01', 123, 'inventory');
+  $connection = mysqli_connect('localhost', 'root', '', 'inventory');
   if (!$connection){
     die('Connection Failed');
   }
